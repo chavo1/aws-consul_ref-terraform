@@ -6,7 +6,6 @@ export IPs=$(hostname -I)
 export HOST=$(hostname)
 export DC=$1
 
-sudo killall consul
 sudo mkdir -p /etc/consul.d/ /opt/consul/
 
 # ###########################
@@ -73,4 +72,3 @@ echo consul started
 set +x
 sleep 10
 consul members
-
